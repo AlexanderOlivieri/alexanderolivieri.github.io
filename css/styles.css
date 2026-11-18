@@ -1,17 +1,3 @@
-/* ==========================================================
-   PORTAFOLIO — PLANTILLA PROFESIONAL
-   Paleta proporcionada:
-   BG principal     #051636
-   BG secundario    #082454
-   Primary          #5AB2EC
-   Accent principal #F47C54
-   Accent secund.   #6A62A8
-   Texto claro      #99D6F7
-
-   Tipografía:
-   Orbitron → identidad técnica / títulos
-   Inter    → cuerpo / UI / lectura
-   ========================================================== */
 
 :root {
   --color-bg-main: #051636;
@@ -98,9 +84,9 @@ a {
   color: var(--color-bg-main);
 }
 
-/* ==========================================================
+/* 
    UTILIDADES
-   ========================================================== */
+    */
 
 .container {
   width: min(100% - 40px, var(--container));
@@ -174,9 +160,9 @@ a {
   color: var(--color-muted);
 }
 
-/* ==========================================================
+/* 
    HEADER
-   ========================================================== */
+    */
 
 .header {
   position: sticky;
@@ -248,9 +234,9 @@ a {
   color: var(--color-primary);
 }
 
-/* ==========================================================
+/* 
    HERO
-   ========================================================== */
+    */
 
 .hero {
   position: relative;
@@ -440,9 +426,9 @@ a {
   color: var(--color-primary);
 }
 
-/* ==========================================================
+/* 
    ABOUT
-   ========================================================== */
+    */
 
 .about__grid {
   display: grid;
@@ -559,9 +545,9 @@ a {
   font-size: .82rem;
 }
 
-/* ==========================================================
+/* 
    PROJECTS
-   ========================================================== */
+   */
 
 .projects__grid {
   display: grid;
@@ -713,6 +699,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: 7px;
+
 }
 
 .project__technologies {
@@ -724,10 +711,13 @@ a {
   padding: 5px 10px;
   border: 1px solid rgba(90,178,236,.2);
   border-radius: 999px;
-  color: var(--color-text-light);
-  background: rgba(90,178,236,.07);
+  color: var(--color-white);
+  background: var(--color-accent-secondary);;
   font-size: .68rem;
   font-weight: 700;
+}
+.certificate{
+  background: linear-gradient(#3498db, #9b59b6) !important;
 }
 
 .project__links {
@@ -736,9 +726,9 @@ a {
   gap: 9px;
 }
 
-/* ==========================================================
+/* 
    SKILLS
-   ========================================================== */
+    */
 
 .skills__grid {
   display: grid;
@@ -762,7 +752,7 @@ a {
 
 .skill-tag {
   padding: 7px 12px;
-  color: var(--color-primary);
+  color: var(--color-accent-main);
 }
 
 .learning {
@@ -788,9 +778,9 @@ a {
   color: var(--color-muted);
 }
 
-/* ==========================================================
+/* 
    CV
-   ========================================================== */
+    */
 
 .cv__grid {
   display: grid;
@@ -854,9 +844,9 @@ a {
   margin-top: 25px;
 }
 
-/* ==========================================================
+/* 
    CONTACTO
-   ========================================================== */
+    */
 
 .contact {
   position: relative;
@@ -944,9 +934,9 @@ a {
   box-shadow: 0 0 12px var(--color-primary);
 }
 
-/* ==========================================================
+/* 
    FOOTER
-   ========================================================== */
+    */
 
 .footer {
   padding: 45px 0;
@@ -999,9 +989,9 @@ a {
   border-top: 1px solid rgba(153,214,247,.08);
 }
 
-/* ==========================================================
+/* 
    RESPONSIVE
-   ========================================================== */
+    */
 
 @media (max-width: 1000px) {
   .hero__container {
@@ -1129,9 +1119,9 @@ a {
   }
 }
 
-/* ==========================================================
+/* 
    ACCESIBILIDAD / REDUCIR MOVIMIENTO
-   ========================================================== */
+   */
 
 @media (prefers-reduced-motion: reduce) {
   html {
