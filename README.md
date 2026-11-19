@@ -676,3 +676,9 @@ Java Full Stack Developer
 ---
 
 ⭐ If this project is useful as a portfolio template, feel free to use it as a starting point and customize it for your own professional profile.
+
+## Arquitectura de navegación
+
+El portafolio utiliza una navegación de una sola página. Las secciones se cargan desde los archivos ubicados en `html/` y se muestran dentro de `index.html`, mientras que la navegación y el pie de página se reutilizan desde `components/nav.html` y `components/footer.html`.
+
+La estructura permite actualizar el menú o el pie de página una sola vez y reutilizarlos en las páginas que incorporen el cargador de componentes.
