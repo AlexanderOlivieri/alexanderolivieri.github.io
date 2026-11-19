@@ -426,6 +426,27 @@ a {
   color: var(--color-primary);
 }
 
+.code-input {
+  background: rgba(2,12,31,.8); 
+  color: var(--color-muted);          
+  border: 2px rgba(8,36,84,.7); 
+  caret-color: rgba(8,36,84,.7);  
+
+
+}
+
+.heartbeat{
+  animation: heart 1s infinite;
+}
+
+  @keyframes heart {
+ 0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
 /* 
    ABOUT
     */
