@@ -84,6 +84,52 @@ a {
   color: var(--color-bg-main);
 }
 
+.logo {
+ width: 32px;
+  height: auto;
+  display: block;
+  /* Aplica la animación de brillo continuo */
+  animation: brillo-logo 2.5s infinite alternate ease-in-out;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  background-color: var(--color-accent-secondary);
+}
+
+@keyframes brillo-logo {
+  0% {
+    filter: drop-shadow(0 0 4px var(--color-accent-secondary));
+  }
+  100% {
+    filter: drop-shadow(0 0 18px var(--color-accent-secondary)) 
+            drop-shadow(0 0 30px var(--color-accent-secondary));
+  }
+}
+
+/* Opcional: Intensifica el brillo al pasar el cursor */
+.logo:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 25px var(--color-accent-secondary)) brightness(1.15);
+}
+
+.logo-blue{
+   width: 32px;
+  height: auto;
+  display: block;
+  /* Aplica la animación de brillo continuo */
+  animation: brillo-logo 2.5s infinite alternate ease-in-out;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  
+}
+
+.logo-blue-primary{
+   width: 32px;
+  height: auto;
+  display: block;
+  /* Aplica la animación de brillo continuo */
+  animation: brillo-logo 2.5s infinite alternate ease-in-out;
+  transition: transform 0.3s ease, filter 0.3s ease;
+
+  background-color: var(--color-primary);
+}
 
 
 .container {
@@ -338,14 +384,14 @@ a {
 .button--secondary,
 .button--outline {
   border-color: rgba(153,214,247,.35);
-  background: transparent;
-  color: var(--color-text-light);
+  background: var(--color-accent-main);
+  color: var(--color-bg-main);
 }
 
 .button--secondary:hover,
 .button--outline:hover {
   border-color: var(--color-primary);
-  background: rgba(90,178,236,.08);
+  background: #f99a52;
 }
 
 .button--small {
